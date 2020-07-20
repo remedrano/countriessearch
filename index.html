@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flags Test">
+    <meta name="keywords" content="Flags, App Responsive, Qrvey">
+    <meta name="author" content="Rafael Medrano Torres">
+
+    <title>Flalgs Test Qrvey </title>
+    <!-- Custom styles CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="autocomplete">
+                <!-- Actual search box -->
+                <input type="search" id="search-input" class="col-5 search-input" placeholder="Search">
+            </div>
+        </div>
+        <div class="flags">
+            <div class="row" id="country-file">
+            </div>
+
+            <!-- Modal -->
+            <div class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span title="Close" class="close-button">&nbsp; &times; &nbsp;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-block title-modal-country">
+                            <div class="info-cuntry-title"> <span class="title-country" id="modal-title"> -
+                                </span> <img id="modal-favorite" favorite="false" country="" src="assets/images/favorite-false.png" title="Agregar a favoritos" class="img-favorite">
+                            </div>
+                            <div class="info-cuntry">
+                                <span class="bold"> Region :</span> <span id="modal-region">-</span>
+                            </div>
+                            <div class="info-cuntry">
+                                <span class="bold"> Population :</span> <span id="modal-population">-</span>
+                            </div>
+                            <div class="info-cuntry">
+                                <span class="bold"> Capital :</span>
+                                <span id="modal-capital">-</span> </div>
+                            <div class="info-cuntry">
+                                <span class="bold"> Currency :</span>
+                                <span id="modal-currency">-</span>
+                            </div>
+                            <div class="info-cuntry">
+                                <span class="bold"> Language :</span>
+                                <span id="modal-language">-</span> </div>
+                            <div class="info-cuntry">
+                                <span class="bold"> Border Countries :</span>
+                                <span id="modal-countries">-</span>
+                            </div>
+                        </div>
+
+                        <div class="modal-block">
+                            <img id="modal-flag" src="" title="Add in favorites" class="img-flag-favorite">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript files -->
+    <script src="config/env.js"></script>
+    <script src="services/http-client.js"></script>
+    <script src="services/index-db-client.js"></script>
+    <script src="modules/country-list.js"></script>
+    <script src="modules/modal.js"></script>
+    <script src="modules/autocomplete.js"></script>
+    <script src="modules/main.js"></script>
+
+</body>
+
+</html>

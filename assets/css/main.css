@@ -1,0 +1,263 @@
+.header {
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    background: #fff;
+    padding: 4%;
+    background-color: #3a4149;
+    white-space: nowrap;
+}
+
+body,
+html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: unset;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'header header' 'main aside' 'footer footer';
+}
+
+.flags {
+    margin-bottom: 3%;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: 5%;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 1% !important;
+    display: table-cell;
+    margin: 2%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.search-input {
+    height: calc(1.7em + 1vw);
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    padding-right: 2.8%;
+    padding-left: 1%;
+    font-size: calc(1rem);
+    line-height: calc(1.5em);
+    color: #495057;
+    border: #495057 solid 1px;
+    border-radius: 0.2rem;
+    background-image: url("../images/search.png");
+    background-position: 99% 6.5px;
+    background-repeat: no-repeat;
+}
+
+
+/** AutoComplete **/
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: #d4d4d4 solid 1px;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.autocomplete-active {
+    background-color: #495057 !important;
+    color: #ffffff;
+}
+
+.img-country-list {
+    width: 16px;
+    height: 14px;
+    margin-right: 7px;
+}
+
+
+/** Modal **/
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 2.5rem 2rem 2.5rem;
+    width: 40%;
+    border-radius: 0.1rem;
+}
+
+.close-button {
+    position: relative;
+    left: 98%;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.1rem;
+    width: 100px;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+    border: 1px solid #3a4149;
+    color: #ffffff;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.title-continent {
+    font-weight: bold;
+    margin-bottom: 7%;
+}
+
+.country-item {
+    font-size: 14px;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.country-item:hover {
+    border: 1px solid;
+    border-radius: 0.25rem;
+}
+
+.img-country-continent {
+    width: 20px;
+    height: 14px;
+    margin-bottom: -3px;
+}
+
+.img-flag-favorite {
+    width: 69%;
+    height: 109px;
+    margin-bottom: -26%;
+    border: 1px solid #EAE9E9;
+}
+
+.img-favorite {
+    width: 38px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: -2px;
+}
+
+.title-modal-country>div>span.title-country {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.modal-block {
+    position: relative;
+    display: table-cell;
+    width: 64%;
+}
+
+.modal-block>img {
+    text-align: center;
+}
+
+.info-cuntry {
+    font-size: calc(0.8rem);
+    margin-top: 5px;
+}
+
+.info-cuntry-title {
+    margin-bottom: 3%;
+}
+
+.bold {
+    font-weight: bold;
+}
